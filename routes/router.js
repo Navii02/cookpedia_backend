@@ -46,6 +46,10 @@ router.get("/all-feedback", jwtMiddleware, testimonyController.getAllFeedbackCon
 
 router.get("/feedback/:id/update",jwtMiddleware,testimonyController.updateFeedbackStatusContoller)
 
+//edit recipes
+router.put("/recipe/:id/edit", jwtMiddleware, recipecontroller.updateRecipeController)
 
+//delete recipe 
+router.delete("/recipes/:id/remove", jwtMiddleware, recipecontroller.removeRecipeController)
 
 module.exports = router
