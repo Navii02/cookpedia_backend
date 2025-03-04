@@ -80,7 +80,7 @@ exports.updateRecipeController = async (req,res)=>{
 
 //deleteRecipe
 exports.removeRecipeController = async (req,res)=>{
-    console.log("Inside removeRecipeController");
+    // console.log("Inside removeRecipeController");
     // get recipe id
     const {id} = req.params
     //remove recipe from model - findByIdandDelete
